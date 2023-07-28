@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TablaUsuariosComponent } from './tabla-usuarios/tabla-usuarios.component';
+import { TablaUsuariosComponent } from './usuarios/tabla-usuarios/tabla-usuarios.component';
 import { UsuariosModule } from './usuarios/usuarios.module';
 
 @NgModule({

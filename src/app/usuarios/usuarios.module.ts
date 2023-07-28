@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule, Routes } from '@angular/router';
-import { TablaUsuariosComponent } from '../tabla-usuarios/tabla-usuarios.component';
+import { TablaUsuariosComponent } from './tabla-usuarios/tabla-usuarios.component';
 import { HttpClientModule } from "@angular/common/http";
 
 const routes: Routes = [
@@ -18,6 +18,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   exports:[RouterModule]
 })

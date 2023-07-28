@@ -1,0 +1,40 @@
+<h1>Usuarios desde Laravel</h1>
+
+<table>
+    <thead>
+        <th>
+            Nombre de Usuario
+        </th>
+        <th>
+            Fecha de Nacimiento
+        </th>
+        <th>
+            Edad
+        </th>
+        <th>
+            Dirección
+        </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>
+                {{user.name}}
+            </td>
+            <td>
+                {{user.fecha_nacimiento}}
+            </td>
+            <td>
+                {{user.age}} años
+            </td>
+            <td>
+                {{user.domicilio + ', ' + user.numero_exterior + ', ' + user.colonia + ', ' + user.cp + ', ' + user.ciudad}}
+            </td>
+        </tr>    
+    </tbody>
+</table>
+
+<ul>
+    <li *ngFor="let user of userList">
+        Name: {{user.name}}
+    </li>
+</ul>

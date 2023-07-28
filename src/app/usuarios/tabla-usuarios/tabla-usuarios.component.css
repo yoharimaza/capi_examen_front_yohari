@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+  }
+
+td {
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #04AA6D;
+    color: white;
+    height: 40px;
+    min-width: 100px;
+  }
+
+  tr:hover {background-color: gray;}
+  
